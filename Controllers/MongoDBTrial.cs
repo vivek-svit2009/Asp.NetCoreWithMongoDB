@@ -85,17 +85,17 @@ namespace ASPWithMongoDB.Controllers
 
 
             /*Delete a Document*/
-           /* var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
-            var res = _EmployeeCollection.DeleteOne(a => a.Id == id);*/
-            
+            var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
+            var res = _EmployeeCollection.DeleteOne(a => a.Id == id);
+
 
 
             /*Delete A Specific Nested Document*/
-           /* var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
-            var Addid = ObjectId.Parse("605764bf7d2e861b2cb9d1fa");
-            var filter = Builders<EmployeeDetails>.Filter.Where(ym => ym.Id == id);
-            var update = Builders<EmployeeDetails>.Update.PullFilter(ym => ym.Address, Builders<Address>.Filter.Where(nm => nm.Id == Addid));
-            _EmployeeCollection.UpdateOne(filter, update);*/
+            /* var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
+             var Addid = ObjectId.Parse("605764bf7d2e861b2cb9d1fa");
+             var filter = Builders<EmployeeDetails>.Filter.Where(ym => ym.Id == id);
+             var update = Builders<EmployeeDetails>.Update.PullFilter(ym => ym.Address, Builders<Address>.Filter.Where(nm => nm.Id == Addid));
+             _EmployeeCollection.UpdateOne(filter, update);*/
 
 
             /*Return All Document*/
