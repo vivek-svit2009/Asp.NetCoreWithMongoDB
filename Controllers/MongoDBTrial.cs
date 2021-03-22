@@ -53,15 +53,15 @@ namespace ASPWithMongoDB.Controllers
 
 
             /*Update A nested Document*/
-            /* Address[] emptyStringArray = new Address[0];
-             var id = ObjectId.Parse("60575f334e4f4cdd1bda46f6"); // your document Id
+
+            /* var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb"); // your document Id
              var builder = Builders<EmployeeDetails>.Filter;
              var filter = builder.Eq(x => x.Id, id);
              var update = Builders<EmployeeDetails>.Update
                  .AddToSet(x => x.Address, new Address
                  {
                      Id = new ObjectId(),
-                     City = "sonaha"
+                     City = "Delhi"
 
                  });
 
@@ -70,18 +70,33 @@ namespace ASPWithMongoDB.Controllers
 
 
             /*Add New Document*/
-           /* var rootCategories = new Address[]
-            {
-                new Address()
-                {
-                    Id = ObjectId.GenerateNewId(),
-                    City = "Ghaziabad"
-                }
-            };
-            EmployeeDetails Emp = new EmployeeDetails();
-            Emp.Name = "Vivek Kumar Sharma";
-            Emp.Address = rootCategories;
-            _EmployeeCollection.InsertOne(Emp);*/
+            /* var rootCategories = new Address[]
+             {
+                 new Address()
+                 {
+                     Id = ObjectId.GenerateNewId(),
+                     City = "Ghaziabad"
+                 }
+             };
+             EmployeeDetails Emp = new EmployeeDetails();
+             Emp.Name = "Vivek Kumar Sharma";
+             Emp.Address = rootCategories;
+             _EmployeeCollection.InsertOne(Emp);*/
+
+
+            /*Delete a Document*/
+           /* var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
+            var res = _EmployeeCollection.DeleteOne(a => a.Id == id);*/
+            
+
+
+            /*Delete A Specific Nested Document*/
+           /* var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
+            var Addid = ObjectId.Parse("605764bf7d2e861b2cb9d1fa");
+            var filter = Builders<EmployeeDetails>.Filter.Where(ym => ym.Id == id);
+            var update = Builders<EmployeeDetails>.Update.PullFilter(ym => ym.Address, Builders<Address>.Filter.Where(nm => nm.Id == Addid));
+            _EmployeeCollection.UpdateOne(filter, update);*/
+
 
             /*Return All Document*/
             return _EmployeeCollection.Find(_ => true).ToList();
