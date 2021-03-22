@@ -85,8 +85,8 @@ namespace ASPWithMongoDB.Controllers
 
 
             /*Delete a Document*/
-            var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
-            var res = _EmployeeCollection.DeleteOne(a => a.Id == id);
+            /*var id = ObjectId.Parse("605764bf7d2e861b2cb9d1fb");
+            var res = _EmployeeCollection.DeleteOne(a => a.Id == id);*/
 
 
 
