@@ -70,7 +70,7 @@ namespace ASPWithMongoDB.Controllers
 
 
             /*Add New Document*/
-            var rootCategories = new Address[]
+           /* var rootCategories = new Address[]
             {
                 new Address()
                 {
@@ -81,7 +81,7 @@ namespace ASPWithMongoDB.Controllers
             EmployeeDetails Emp = new EmployeeDetails();
             Emp.Name = "Vivek Kumar Sharma";
             Emp.Address = rootCategories;
-            _EmployeeCollection.InsertOne(Emp);
+            _EmployeeCollection.InsertOne(Emp);*/
 
             /*Return All Document*/
             return _EmployeeCollection.Find(_ => true).ToList();

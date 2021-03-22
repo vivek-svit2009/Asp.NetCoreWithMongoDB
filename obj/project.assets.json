@@ -5997,11 +5997,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ASPWithMongoDB\\ASPWithMongoDB.csproj",
+      "projectUniqueName": "G:\\Asp.NetCoreWithMongoDB\\ASPWithMongoDB.csproj",
       "projectName": "ASPWithMongoDB",
-      "projectPath": "G:\\ASPWithMongoDB\\ASPWithMongoDB.csproj",
+      "projectPath": "G:\\Asp.NetCoreWithMongoDB\\ASPWithMongoDB.csproj",
       "packagesPath": "C:\\Users\\VIVEK\\.nuget\\packages\\",
-      "outputPath": "G:\\ASPWithMongoDB\\obj\\",
+      "outputPath": "G:\\Asp.NetCoreWithMongoDB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
