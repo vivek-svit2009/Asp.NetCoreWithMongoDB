@@ -60,8 +60,26 @@ namespace ASPWithMongoDB.Controllers
 
         // PUT api/<CRUDMongoDB>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IEnumerable<EmployeeDetails> Put(string id, [FromBody] EmployeeUpdate emp)
         {
+            var Id = ObjectId.Parse(id);
+            
+            var filter = Builders<EmployeeDetails>.Filter;
+            var empployeeId = filter.And(
+                filter.Eq(x => x.Id, Id));
+            var employee = _EmployeeCollection.Find(empployeeId).SingleOrDefault();
+            var updatee = Builders<EmployeeDetails>.Update;
+            
+            string nameupdate = "updatee";
+            int count = emp.Field.Count();
+            int i;
+            for (i = 0; i < count; i++)
+            {
+                nameupdate = nameupdate+".set(\""+emp.Field[i]+"\":\""+emp.value[i]+"\")";
+            }
+            System.Diagnostics.Debug.WriteLine(nameupdate);
+            _EmployeeCollection.UpdateOne(empployeeId, nameupdate);
+            return _EmployeeCollection.Find(x => x.Id == Id).ToList();
 
         }
 
