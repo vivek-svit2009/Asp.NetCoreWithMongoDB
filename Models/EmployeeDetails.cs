@@ -1,9 +1,11 @@
-﻿using MongoDB.Bson;
+﻿using Microsoft.AspNetCore.Http;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace ASPWithMongoDB.Models
 {
@@ -16,7 +18,7 @@ namespace ASPWithMongoDB.Models
         [BsonElement("Name")]
         public string Name { get; set; }
 
-        public Address[] Address { get; set;
-        }
+        public Address[] Address { get; set; }
+
     }
 }
