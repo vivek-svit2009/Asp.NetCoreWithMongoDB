@@ -103,7 +103,6 @@ G:\ASPWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.dll
 G:\ASPWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.pdb
 G:\ASPWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.genruntimeconfig.cache
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.dll
-G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.pdb
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.Views.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\DnsClient.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -119,6 +118,9 @@ G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\MongoDB.LibMongocrypt.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\appsettings.Development.json
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\appsettings.json
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.StaticWebAssets.xml
@@ -148,6 +150,7 @@ G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.d
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.Graph.Core.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
@@ -157,13 +160,11 @@ G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\SharpCompress.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
@@ -171,7 +172,6 @@ G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongo
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
@@ -205,4 +205,5 @@ G:\Asp.NetCoreWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.csproj.CopyComp
 G:\Asp.NetCoreWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.dll
 G:\Asp.NetCoreWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.pdb
 G:\Asp.NetCoreWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.genruntimeconfig.cache
+G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.pdb
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.Views.pdb
