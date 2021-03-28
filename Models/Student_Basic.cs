@@ -12,11 +12,9 @@ namespace ASPWithMongoDB.Models
     {
         
         public int _id { get; set; }
-
         public string Student_Name { get; set; }
         public string Father_Name { get; set; }
         public string Mother_Name { get; set; }
-
         public string old_school { get; set; }
         public string DOB { get; set; }
         public string Religion { get; set; }
@@ -31,7 +29,6 @@ namespace ASPWithMongoDB.Models
         public string Adhaar { get; set; }
         public string form_no { get; set; }
         public string lastclass { get; set; }
-
         public string dol { get; set; }
         public string foradd { get; set; }
         public string fromadd { get; set; }
@@ -39,6 +36,7 @@ namespace ASPWithMongoDB.Models
         public string birthplace { get; set; }
         public Student_Subject[] Subjects { get; set; }
         public Student_Academic[] Academics { get; set; }
+        public Student_Mark[] Marks { get; set; }
 
     }
 }
