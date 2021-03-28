@@ -256,7 +256,7 @@ namespace ASPWithMongoDB.Controllers
 
 
             List<Student_Basic> lst =  _Student_BasicCollection.Aggregate()
-           .Match(Builders<Student_Basic>.Filter.Eq(x => x._id, id) & Builders<Student_Basic>.Filter.ElemMatch(x => x.Academics, Builders<Student_Academic>.Filter.Eq(x => x.Class, clas)) & Builders<Student_Basic>.Filter.ElemMatch(x => x.Subjects, Builders<Student_Subject>.Filter.Eq(x => x.Class, clas)) & Builders<Student_Basic>.Filter.ElemMatch(x => x.Marks, Builders<Student_Mark>.Filter.Eq(x => x.Class, clas)))
+           .Match(Builders<Student_Basic>.Filter.Eq(x => x._id, id) & Builders<Student_Basic>.Filter.ElemMatch(x => x.Academics, Builders<Student_Academic>.Filter.Eq(x => x.Class, clas)) /*& Builders<Student_Basic>.Filter.ElemMatch(x => x.Subjects, Builders<Student_Subject>.Filter.Eq(x => x.Class, clas))*/)
            .AppendStage<Student_Basic>(BsonDocument.Parse(@"{ $addFields: { ""Academics"" : { $filter: { input: ""$Academics"", as: ""item"", cond: { $eq: [""$$item.Class"", '"+clas+"'] } } } } }"))
            .AppendStage<Student_Basic>(BsonDocument.Parse(@"{ $addFields: { ""Subjects"" : { $filter: { input: ""$Subjects"", as: ""item"", cond: { $eq: [""$$item.Class"", '" + clas + "'] } } } } }"))
            .AppendStage<Student_Basic>(BsonDocument.Parse(@"{ $addFields: { ""Marks"" : { $filter: { input: ""$Marks"", as: ""item"", cond: { $eq: [""$$item.Class"", '" + clas + "'] } } } } }"))

@@ -207,3 +207,4 @@ G:\Asp.NetCoreWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.pdb
 G:\Asp.NetCoreWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.genruntimeconfig.cache
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.pdb
 G:\Asp.NetCoreWithMongoDB\bin\Debug\netcoreapp3.1\ASPWithMongoDB.Views.pdb
+G:\Asp.NetCoreWithMongoDB\obj\Debug\netcoreapp3.1\ASPWithMongoDB.csprojAssemblyReference.cache
